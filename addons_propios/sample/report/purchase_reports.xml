@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_report_sample_order" model="ir.actions.report">
+            <field name="name">Sample Order</field>
+            <field name="model">sample.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">sample.report_sampleorder</field>
+            <field name="report_file">sample.report_sampleorder</field>
+            <field name="print_report_name">
+                (object.state in ('draft', 'sent') and 'Request for Quotation - %s' % (object.name) or
+                'Purchase Order - %s' % (object.name))</field>
+            <field name="binding_model_id" ref="model_sample_order"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="report_sample_quotation" model="ir.actions.report">
+            <field name="name">Request for Quotation</field>
+            <field name="model">sample.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">sample.report_samplequotation</field>
+            <field name="report_file">sample.report_samplequotation</field>
+            <field name="print_report_name">'Request for Quotation - %s' % (object.name)</field>
+            <field name="binding_model_id" ref="model_sample_order"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>
