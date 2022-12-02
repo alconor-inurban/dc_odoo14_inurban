@@ -1,0 +1,25 @@
+<?xml version="1.0"?> 
+<odoo> 
+  <report id="action_compras_report" 
+    string="Compras de Caña" 
+    model="guias_pma.reporte_por_frente" 
+    report_type="qweb-pdf" 
+    name="guias_pma.report_porfrente_template" 
+  />
+  <!--
+      directiva "t-call":
+        - report.html_container: realiza la configuración básica para admitir un documento HTML.
+        - report.external_layout: maneja el encabezado y pie de página del informe, utilizando 
+            la configuración correspondiente de la empresa adecuada.
+        - report.internal_layout: que utiliza sólo un encabezado básico.
+  -->
+  <template id="report_porfrente_template"> 
+  <t t-call="report.html_container"> 
+    <t t-call="report.external_layout"> 
+      <div class="page"> 
+        <!-- Report page content --> 
+      </div> 
+    </t> 
+  </t> 
+</template> 
+</odoo> 

@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bitacoraacarreo,guias_pma.bitacoraacarreo,model_guias_pma_bitacoraacarreo,group_bitacoraacarreo_user,1,1,1,0
+access_bitacoraacarreo_manager,guias_pma.bitacoraacarreo.manager,model_guias_pma_bitacoraacarreo,group_bitacoraacarreo_manager,1,1,1,1
+access_estatus,guias_pma.estatus,model_guias_pma_estatus,group_bitacoraacarreo_manager,1,1,1,1
+access_estatus_user,guias_pma.estatus.user,model_guias_pma_estatus,group_bitacoraacarreo_user,1,1,1,0
+access_eventos,guias_pma.eventos,model_guias_pma_eventos,group_bitacoraacarreo_manager,1,1,1,1
+access_bitacoraacarreocolumn,guias_pma.bitacoraacarreocolumn,model_guias_pma_bitacoraaca_col,group_bitacoraacarreocolumn_user,1,1,1,0
+access_bitacoraacarreocolumn_manager,guias_pma.bitacoraacarreocolumn.manager,model_guias_pma_bitacoraaca_col,group_bitacoraacarreocolumn_manager,1,1,1,1

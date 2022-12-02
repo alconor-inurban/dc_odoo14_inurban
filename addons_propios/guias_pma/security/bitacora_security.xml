@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+    <record model="ir.module.category" id="bitacora_log">
+        <field name="name">Bitacora</field>
+        <field name="description">Bitacora Log</field>
+        <field name="sequence">38</field>
+    </record>
+
+    <record id="group_bitacoraacarreo_user" model="res.groups">
+        <field name="name">User Bitacora</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        <field name="category_id" ref="bitacora_log"/>
+    </record>
+    <!---->
+    <record id="group_bitacoraacarreo_manager" model="res.groups">
+        <field name="name">Administrator Bitacora</field>
+        <field name="category_id" ref="bitacora_log"/>
+        <field name="implied_ids" eval="[(4, ref('group_bitacoraacarreo_user'))]"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+    <record id="group_bitacoraacarreocolumn_user" model="res.groups">
+        <field name="name">User Bitacora Columna</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        <field name="category_id" ref="bitacora_log"/>
+    </record>
+    <record id="group_bitacoraacarreocolumn_manager" model="res.groups">
+        <field name="name">Administrator Bitacora Columna</field>
+        <field name="category_id" ref="bitacora_log"/>
+        <field name="implied_ids" eval="[(4, ref('group_bitacoraacarreocolumn_user'))]"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+    
+    <!--
+    <record id="group_send_reminder" model="res.groups">
+        <field name="name">Send an automatic reminder email to confirm delivery</field>
+        <field name="category_id" ref="sample"/>
+    </record>
+
+    <record id="group_warning_sample" model="res.groups">
+        <field name="name">A warning can be set on a product or a customer (sample)</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    -->
+
+</data>
+
+<data noupdate="1">
+
+
+</data>
+
+</odoo>
