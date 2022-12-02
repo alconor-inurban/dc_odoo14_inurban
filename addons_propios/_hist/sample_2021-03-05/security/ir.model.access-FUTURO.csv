@@ -1,0 +1,39 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fincas_pma_fincas_pma,fincas_pma.fincas_pma,model_fincas_pma_fincas_pma,base.group_user,1,1,1,1
+access_sample_order,sample.order,model_sample_order,group_sample_user,1,1,1,1
+access_sample_order_manager,sample.order,model_sample_order,group_sample_manager,1,1,1,1
+access_sample_order_invoicing_payments_readonly,sample.order,model_sample_order,account.group_account_readonly,1,0,0,0
+access_sample_order_invoicing_payments,sample.order,model_sample_order,account.group_account_invoice,1,1,0,0
+access_sample_order_portal,sample.order.portal,sample.model_sample_order,base.group_portal,1,0,0,0
+access_sample_order_line,sample.order.line user,model_sample_order_line,group_sample_user,1,1,1,1
+access_sample_order_line_manager,sample.order.line,model_sample_order_line,group_sample_manager,1,1,1,1
+access_sample_order_line_invoicing_payments_readonly,sample.order.line,model_sample_order_line,account.group_account_readonly,1,0,0,0
+access_sample_order_line_invoicing_payments,sample.order.line,model_sample_order_line,account.group_account_invoice,1,1,0,0
+access_sample_order_line_portal,sample.order.line.portal,sample.model_sample_order_line,base.group_portal,1,0,0,0
+access_account_tax_sample_user,account.tax,account.model_account_tax,group_sample_user,1,0,0,0
+access_account_tax_sample_user_manager,account.tax,account.model_account_tax,group_sample_manager,1,0,0,0
+access_product_product_sample_user,product.product.sample.user,product.model_product_product,group_sample_user,1,0,0,0
+access_product_product_sample_manager,product.product sample_manager,product.model_product_product,sample.group_sample_manager,1,1,1,1
+access_product_template_sample_user,product.template sample_user,product.model_product_template,group_sample_user,1,0,0,0
+access_account_fiscal_position_sample_user,account.fiscal.position sample,account.model_account_fiscal_position,group_sample_user,1,0,0,0
+access_res_partner_sample_user,res.partner sample,base.model_res_partner,group_sample_user,1,0,0,0
+access_account_journal,account.journal,account.model_account_journal,group_sample_user,1,0,0,0
+access_account_journal_manager,account.journal,account.model_account_journal,group_sample_manager,1,0,0,0
+access_account_move,account.move,account.model_account_move,group_sample_user,1,1,1,1
+access_account_move_line_manager,account.move.line,account.model_account_move_line,group_sample_manager,1,1,1,1
+access_account_move_line,account.move.line,account.model_account_move_line,group_sample_user,1,1,1,0
+access_account_analytic_line,account.analytic.line,account.model_account_analytic_line,group_sample_user,1,0,0,0
+access_account_type,account.acount.type.sample.user,account.model_account_account_type,group_sample_user,1,0,0,0
+account_partial_reconcile,account.partial.reconcile.sample.user,account.model_account_partial_reconcile,group_sample_user,1,0,0,0
+access_res_partner_sample_manager,res.partner.sample.manager,base.model_res_partner,group_sample_manager,1,1,1,0
+access_uom_category_sample_manager,uom.category sample_manager,uom.model_uom_category,sample.group_sample_manager,1,1,1,1
+access_uom_uom_sample_manager,uom.uom sample_manager,uom.model_uom_uom,sample.group_sample_manager,1,1,1,1
+access_product_category_sample_manager,product.category sample_manager,product.model_product_category,sample.group_sample_manager,1,1,1,1
+access_product_template_sample_manager,product.template sample_manager,product.model_product_template,sample.group_sample_manager,1,1,1,1
+access_product_packaging_sample_manager,product.packaging sample_manager,product.model_product_packaging,sample.group_sample_manager,1,1,1,1
+access_product_supplierinfo_sample_manager,product.supplierinfo sample_manager,product.model_product_supplierinfo,sample.group_sample_manager,1,1,1,1
+access_product_pricelist_item_sample_manager,product.pricelist.item sample_manager,product.model_product_pricelist_item,sample.group_sample_manager,1,1,1,1
+access_account_account_sample_manager,account.account sample manager,account.model_account_account,sample.group_sample_manager,1,0,0,0
+access_sample_bill_union,access_sample_bill_union,model_sample_bill_union,sample.group_sample_user,1,0,0,0
+access_report_sample_order,sample.stock.report,model_sample_report,sample.group_sample_manager,1,0,0,0
+access_report_sample_order_user,sample.stock.report user,model_sample_report,sample.group_sample_user,1,0,0,0

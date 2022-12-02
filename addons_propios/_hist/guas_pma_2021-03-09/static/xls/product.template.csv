@@ -1,0 +1,2 @@
+id,sequence,name,default_code,responsible_id,list_price,standard_price,type,weight,uom_id
+10,1,CAÑA DE AZUCAR,MP-001,Administrator,0,0,Storable Product,1,Units

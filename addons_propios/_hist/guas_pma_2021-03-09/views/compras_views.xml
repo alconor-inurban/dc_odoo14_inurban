@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="guias_pma_order_view_form_inherit" model="ir.ui.view">
+        <field name="name">guias_pma.order.form.inherit</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='price_unit']" position="after">
+                <field name="project_id" optional="show"/>
+                  <field name="caja" optional="show"/>
+                <field name="alce" optional="show"/>
+                <field name="contrato" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="guias_pma_order_view_tree_inherit" model="ir.ui.view">
+        <field name="name">guias_pma.order.tree.inherit</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_kpis_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_approve']" position="after">
+                    <field name="secuencia_guia" optional="show"/>
+                    <field name="dia_zafra" optional="show"/>
+                    <field name="lote_hora" optional="show"/>                    
+                    <field name="fecha_guia" optional="show"/>
+                    <field name="hora_entrada" optional="show"/>
+                    <field name="frente" optional="show"/>
+                    <field name="contrato" optional="show"/>                    
+                    <field name="partner_id" readonly="1"/>
+                    <field name="uplote" optional="show"/>
+                    <field name="neto_ton" optional="show"/>
+                    <field name="company_id" readonly="1" options="{'no_create': True}" groups="base.group_multi_company" optional="show"/>
+                    <field name="date_planned" invisible="context.get('quotation_only', False)" optional="show"/>
+                    <field name="user_id" optional="show" widget="many2one_avatar_user"/>
+                    <field name="date_order" attrs="{'invisible': ['|', '|', ('state', '=', 'purchase'), ('state', '=', 'done'), ('state', '=', 'cancel')]}" invisible="not context.get('quotation_only', False)" widget="remaining_days" optional="show"/>
+                    <field name="activity_ids" widget="list_activity" optional="show"/>
+                    <field name="origin" optional="show"/>
+                    <field name="fecha_tiquete" optional="show"/>                    
+                    <field name="hora_tiquete" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="guias_pma_order_line_view_form_inherit" model="ir.ui.view">
+        <field name="name">guias_pma.order.line.form.inherit</field>
+        <field name="model">purchase.order.line</field>
+        <field name="inherit_id" ref="purchase.purchase_order_line_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_planned']" position="after">
+                <field name="project_id"/>
+                <field name="caja"/>
+                <field name="alce"/>
+                <field name="contrato"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

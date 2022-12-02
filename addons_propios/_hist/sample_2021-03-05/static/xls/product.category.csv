@@ -1,0 +1,5 @@
+"id","name","parent_id"
+"10","Materia Extraña","All"
+"11","Mineral","All / Materia Extraña"
+"12","Vegetal","All / Materia Extraña"
+"13","Materia Prima","All"

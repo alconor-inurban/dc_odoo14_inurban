@@ -1,0 +1,177 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="fincas_pma.list">
+      <field name="name">fincas_pma list</field>
+      <field name="model">fincas_pma.fincas_pma</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="active"/>
+          <field name="code_finca"/>
+          <field name="description"/>
+          <field name="employee_in_charge"/>
+          <field name="value_area_mts"/>
+          <field name="value_area_ha"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="fincas_pma.listaprovincias">
+      <field name="name">fincas_pma listaprovincias</field>
+      <field name="model">fincas_pma.provincias</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="active"/>
+          <field name="code_provincia"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="fincas_pma.listaup">
+      <field name="name">fincas_pma listaup</field>
+      <field name="model">fincas_pma.up</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="active"/>
+          <field name="code_up"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="fincas_pma.listatiposcortes">
+      <field name="name">fincas_pma lista Tipos de Cortes</field>
+      <field name="model">fincas_pma.tiposcortes</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="active"/>
+          <field name="code_tipocorte"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="fincas_pma.listazafras">
+      <field name="name">fincas_pma lista Zafras</field>
+      <field name="model">fincas_pma.zafras</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="active"/>
+          <field name="code_zafra"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="fincas_pma.lista_tipo_cane">
+      <field name="name">fincas_pma lista Tipo de Caña</field>
+      <field name="model">fincas_pma.tipo_cane</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="active"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+<!-- -->
+    <record model="ir.ui.view" id="fincas_pma.lista_calendario">
+      <field name="name">fincas_pma lista Calendarios</field>
+      <field name="model">fincas_pma.calendario</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="active"/>
+          <field name="description"/>
+          <field name="code_zafra"/>
+          <field name="fecha_hora_inicio"/>
+          <field name="fecha_hora_fin"/>
+          <field name="fecha_hora_cultivo_i"/>
+          <field name="fecha_hora_cultivo_f"/>
+          <field name="periodo_actual"/>
+          <field name="ahora"/>
+        </tree>
+      </field>
+    </record>
+
+<!--<field name="company_id"/> groups="base.group_multi_company"  optional="show"
+ domain="[('active', '=', True), ('company_id', '=', company_id)]"-->
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="fincas_pma.action_window">
+      <field name="name">fincas_pma window</field>
+      <field name="res_model">fincas_pma.fincas_pma</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="fincas_pma.action_window_prov">
+      <field name="name">fincas_pma window provincias</field>
+      <field name="res_model">fincas_pma.provincias</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="fincas_pma.action_window_up">
+      <field name="name">fincas_pma window up</field>
+      <field name="res_model">fincas_pma.up</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="fincas_pma.action_window_tiposcortes">
+      <field name="name">fincas_pma window Tipos de Cortes</field>
+      <field name="res_model">fincas_pma.tiposcortes</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="fincas_pma.action_window_zafras">
+      <field name="name">fincas_pma window Zafras</field>
+      <field name="res_model">fincas_pma.zafras</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="fincas_pma.action_window_tipo_cane">
+      <field name="name">fincas_pma window Tipo Cane</field>
+      <field name="res_model">fincas_pma.tipo_cane</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="fincas_pma.action_window_calendario">
+      <field name="name">Calendario Zafra Cultivo</field>
+      <field name="res_model">fincas_pma.calendario</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Fincas Panamá" id="fincas_pma.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="[ Fincas    ]" id="fincas_pma.menu_1" parent="fincas_pma.menu_root"/>
+    
+    <menuitem name="[ Proyectos ]" id="fincas_pma.menu_3" parent="fincas_pma.menu_root"/>
+    <menuitem name="[ Equipos   ]" id="fincas_pma.menu_4" parent="fincas_pma.menu_root"/>
+    <menuitem name="[ Labores   ]" id="fincas_pma.menu_2" parent="fincas_pma.menu_root"/>
+    <!-- actions -->
+
+    <menuitem name="Lista de Fincas" id="fincas_pma.menu_1_list" parent="fincas_pma.menu_1"
+              action="fincas_pma.action_window"/>
+
+    <menuitem name="Lista Provincias" id="fincas_pma.menu_2_list" parent="fincas_pma.menu_1"
+              action="fincas_pma.action_window_prov"/>
+
+    <menuitem name="Lista UPs" id="fincas_pma.menu_up_list" parent="fincas_pma.menu_3"
+              action="fincas_pma.action_window_up"/>              
+
+    <menuitem name="Lista Tipos de Cortes" id="fincas_pma.menu_tdc_list" parent="fincas_pma.menu_1"
+              action="fincas_pma.action_window_tiposcortes"/>              
+
+    <menuitem name="Lista Zafras" id="fincas_pma.menu_zafras_list" parent="fincas_pma.menu_1"
+              action="fincas_pma.action_window_zafras"/>
+
+    <menuitem name="Lista Tipo Caña" id="fincas_pma.menu_tipo_cane_list" parent="fincas_pma.menu_1"
+              action="fincas_pma.action_window_tipo_cane"/>              
+
+    <menuitem name="Lista Calendarios" id="fincas_pma.menu_calendario_list" parent="fincas_pma.menu_1"
+              action="fincas_pma.action_window_calendario"/>                            
+
+  </data>
+</odoo>
