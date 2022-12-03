@@ -434,7 +434,7 @@ class BaseSynchro(models.TransientModel):
             target=self.upload_download()
         )
         threaded_synchronization.run()
-        id2 = self.env.ref("base_synchro.view_base_synchro_finish").id
+        id2 = self.env.ref("view_base_synchro_finish").id
         return {
             "binding_view_types": "form",
             "view_mode": "form",
