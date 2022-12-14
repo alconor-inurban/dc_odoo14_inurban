@@ -5,3 +5,7 @@ INURBAN, S.A.
 Esta estructurado en:
 - addons_propios
 - addons_terceros
+- config
+- oca/account_analytic
+El repositorio esta construido para trabajar con docker-compose
+
