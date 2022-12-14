@@ -7,5 +7,7 @@ Esta estructurado en:
 - addons_terceros
 - config
 - oca/account_analytic
+
 El repositorio esta construido para trabajar con docker-compose
 
+Ultima revision: 14-dic-2022
