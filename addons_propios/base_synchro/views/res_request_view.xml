@@ -59,6 +59,6 @@
         <field name="search_view_id" ref="view_res_request_search"/>
     </record>
 
-    <menuitem id="menu_res_request" action="action_res_request" parent="next_id_63"/>
+    <menuitem id="menu_res_request" action="action_res_request" parent="base_synchro.next_id_63"/>
 
 </odoo>
