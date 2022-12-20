@@ -9010,3 +9010,34 @@ psycopg2.InterfaceError: connection already closed
 2022-12-20 17:05:22,224 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
 2022-12-20 17:05:23,068 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
 2022-12-20 17:05:23,075 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:05:23] "POST /longpolling/im_status HTTP/1.1" 200 - 4 0.002 0.006
+2022-12-20 17:05:50,742 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2022-12-20 17:05:56,664 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2022-12-20 17:06:12,244 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:06:12] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.003 50.019
+2022-12-20 17:06:12,252 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:06:14,938 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:06:14,945 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:06:14] "POST /longpolling/im_status HTTP/1.1" 200 - 4 0.002 0.006
+2022-12-20 17:06:50,757 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2022-12-20 17:06:57,690 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2022-12-20 17:07:02,265 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:07:02] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.003 50.011
+2022-12-20 17:07:02,272 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:07:05,285 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:07:05,293 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:07:05] "POST /longpolling/im_status HTTP/1.1" 200 - 4 0.002 0.007
+2022-12-20 17:07:50,743 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2022-12-20 17:07:52,284 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:07:52] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.002 50.011
+2022-12-20 17:07:52,292 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:07:56,650 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:07:56,676 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:07:56] "POST /longpolling/im_status HTTP/1.1" 200 - 4 0.003 0.024
+2022-12-20 17:07:58,718 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2022-12-20 17:08:42,348 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:08:42] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.004 50.052
+2022-12-20 17:08:42,356 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:08:48,163 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:08:48,169 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:08:48] "POST /longpolling/im_status HTTP/1.1" 200 - 4 0.001 0.005
+2022-12-20 17:08:50,738 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2022-12-20 17:08:50,743 1 INFO p14_LAS_LOMAS_LOCAL odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-12-20 17:08:50,748 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
+2022-12-20 17:08:50,749 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.addons.base.models.ir_cron: cron.object.execute('p14_LAS_LOMAS_LOCAL', 1, '*', 'Post process payment transactions', 355) 
+2022-12-20 17:08:50,754 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.addons.base.models.ir_cron: 0.003s (cron Post process payment transactions, server action 355 with uid 1) 
+2022-12-20 17:08:50,760 1 INFO p14_LAS_LOMAS_LOCAL odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-12-20 17:08:59,696 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2022-12-20 17:09:32,371 1 INFO p14_LAS_LOMAS_LOCAL werkzeug: 172.20.0.1 - - [20/Dec/2022 17:09:32] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.003 50.014
+2022-12-20 17:09:32,379 1 DEBUG p14_LAS_LOMAS_LOCAL odoo.modules.registry: Multiprocess signaling check: [Registry - 4 -> 4] [Cache - 4 -> 4] 
