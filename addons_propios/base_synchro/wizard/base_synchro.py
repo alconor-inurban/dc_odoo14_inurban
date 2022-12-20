@@ -467,7 +467,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model res_users on cloud
@@ -507,7 +507,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model res_partener
@@ -572,7 +572,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model product_template
@@ -619,7 +619,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model stock.quant
@@ -756,7 +756,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model sotck.warehouse
@@ -862,7 +862,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model sotck.location
@@ -966,7 +966,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model sotck.picking.type
@@ -1070,7 +1070,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model ir.sequence
@@ -1161,7 +1161,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model account.analytic.account
@@ -1232,7 +1232,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model project.project
@@ -1337,7 +1337,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model project.task.phase
@@ -1465,7 +1465,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
 
@@ -1635,7 +1635,7 @@ class BaseSynchro(models.TransientModel):
                     'res.partner', 'check_access_rights',
                     ['read'], {'raise_exception': False})
         except Exception as err:
-            print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+            print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
             raise
             return
         # model: cloud o nube: stock.picking; solo los no exportados
@@ -1674,7 +1674,7 @@ class BaseSynchro(models.TransientModel):
             try:
                 search_location_cloud = models_cloud.execute_kw(lc_db, uid, lc_pass, 'stock.location', 'search_read', [[['parent_path','=', lc_location_parent_path]]])
             except Exception as err:
-                print(f">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
+                print(">>>>>>>>>>>>>---------- Inesperado/Unexpected {err=}, {type(err)=}")
                 raise
                 return
             # 
