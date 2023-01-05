@@ -1131,7 +1131,7 @@ class BaseSynchro(models.TransientModel):
                             'number_next':n['number_next'],
                             'number_increment':n['number_increment'],
                             'padding':n['padding'],
-                            'company_id':n['company_id'][0],
+                            'company_id':self.norma_false(n['company_id']), #n['company_id'][0]
                             'use_date_range':n['use_date_range'],
                             'number_next_actual':n['number_next_actual']
                     })

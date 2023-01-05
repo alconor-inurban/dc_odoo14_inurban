@@ -2,7 +2,7 @@
 
 {
     "name": "AlconSoft - Multi-DB Synchronization",
-    "version": "14.0-22.12.20",
+    "version": "14.0-23.01.03",
     "category": "Tools",
     "license": "AGPL-3",
     "summary": "Multi-DB Synchronization",
